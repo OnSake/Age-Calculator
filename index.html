@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
   <title>Frontend Mentor | Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,23 +16,64 @@
   </style>
 </head>
 <body>
+  <section class="container">
+    <div class="top">
+      <div class="inputs">
 
-  Day
-  DD
+        <div class="number-inputs">
+          <label for="day-input" class="error_label">Day</label>
+          <input type="number" placeholder="DD" id="day-input" class="error_class">
+          <p id="error_message" class="error_message">Must be a valid date</p>
+        </div>
 
-  Month
-  MM
+        <div class="number-inputs">
+          <label for="month-input">Month</label>
+          <input type="number" placeholder="MM" id="month-input">
+          <p id="error_message" class="error_message">Must be a valid date</p>
+        </div>
 
-  Year
-  YYYY
+        <div class="number-inputs">
+          <label for="year-input">Year</label>
+          <input type="number" placeholder="YYYY" id="year-input">
+          <p id="error-message" class="error_message">Must be a valid date</p>
+        </div>
+      </div>
+    </div>
 
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+   <div class="separation">
+     <div class="line"></div>
+     <div class="arrow">
+       <i class="ri-arrow-down-line"></i>
+      </div>
+   </div>
+
+
+   <div class="text_section">
+    <div class="text">
+      <span id="year-span">--</span>
+      <p>years</p>
+    </div>
+
+    <div class="text">
+      <span id="month-span">--</span>
+      <p>months</p>
+    </div>
+
+    <div class="text">
+      <span id="day-span">--</span>
+      <p>days</p>
+    </div>
+   </div>
+    
+
+
+  </section>
+
+
 </body>
+
+<footer class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Your Name Here</a>.
+</footer>
 </html>

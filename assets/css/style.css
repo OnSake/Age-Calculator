@@ -1,0 +1,187 @@
+/* ====================== FONTS ====================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+
+/* ====================== CSS DEFAULT SETTINGS ====================== */
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+
+/* ====================== CUSTOM VARIABLES ====================== */
+
+:root{
+  --poppins: 'Poppins', sans-serif;
+  --purple-primary: hsl(259, 100%, 65%);
+  --light-red-primary: hsl(0, 100%, 67%);
+  --white-color: hsl(0, 0%, 100%);
+  --off-white-color: hsl(0, 0%, 94%);
+  --light-grey-color: hsl(0, 0%, 86%);
+  --smokey-grey-color: hsl(0, 1%, 44%);
+  --off-black-color: hsl(0, 0%, 8%);
+}
+
+
+/* ====================== CSS ====================== */
+
+
+*{
+  font-family: var(--poppins);
+  padding: 0;
+  margin: 0;
+
+}
+
+body{
+  background-color: var(--off-white-color);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.container{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  background-color: var(--white-color);
+  border-radius: 30px 30px 200px 30px;
+}
+
+/* ====================== INPUTS ====================== */
+
+.inputs{
+  display: flex;
+  gap: 50px;
+  margin: 50px;
+}
+
+.number-inputs{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.number-inputs label{
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--smokey-grey-color);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.number-inputs input{
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  border: 1px solid var(--smokey-grey-color);
+  font-size: 32px;
+  padding: 10px 20px 10px 20px;
+}
+
+.number-inputs input:focus{
+  border: 1px solid var(--purple-primary);
+  outline: 1px solid var(--purple-primary);
+  caret-color: var(--purple-primary);
+}
+
+.error_message{
+  font-style: italic;
+  color: var(--light-red-primary);
+  font-size: 15px;
+  margin-top: 10px;
+  display: none;
+}
+
+
+/* ====================== LINE ====================== */
+
+.separation{
+  display: flex;
+  align-items: center;
+}
+
+.line{
+  width: 85%;
+  height: 2px;
+  background-color: var(--light-grey-color);
+  margin-left: 50px;
+}
+
+.arrow{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: var(--purple-primary);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s;
+  right: 100px;
+}
+
+.arrow i{
+  font-size: 50px;
+  color: white;
+}
+
+.arrow:hover{
+  background-color: var(--off-black-color);
+}
+
+/* ====================== TEXT SECTION ====================== */
+
+.text_section{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin: 50px 50px;
+  padding-bottom: 50px;
+}
+
+.text{
+  display: flex;
+  gap: 10px;
+}
+
+.text span, 
+.text p{
+  font-size: 82px;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.text span{
+  color: var(--purple-primary);
+}
+
+/* ====================== JS CLASS ====================== */
+.error_input{
+  outline: 1px solid var(--light-red-primary);
+}
+
+.error_label{
+  color: var(--light-red-primary);
+}
+
+.active_error{
+  display: flex;
+}
+
+
+/* ====================== FOOTER ====================== */
+
+footer{
+  bottom: 0;
+}
