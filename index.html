@@ -21,28 +21,28 @@
       <div class="inputs">
 
         <div class="number-inputs">
-          <label for="day-input" class="error_label">Day</label>
-          <input type="number" placeholder="DD" id="day-input" class="error_class">
-          <p id="error_message" class="error_message">Must be a valid date</p>
+          <label for="day-input" class="" id="day-label">Day</label>
+          <input type="number" placeholder="DD" id="day-input" class="">
+          <p id="day-error-message" class="error_message ">Must be a valid date</p>
         </div>
 
         <div class="number-inputs">
-          <label for="month-input">Month</label>
+          <label for="month-input" class="" id="month-label">Month</label>
           <input type="number" placeholder="MM" id="month-input">
-          <p id="error_message" class="error_message">Must be a valid date</p>
+          <p id="month-error-message" class="error_message">Must be a valid date</p>
         </div>
 
         <div class="number-inputs">
-          <label for="year-input">Year</label>
-          <input type="number" placeholder="YYYY" id="year-input">
-          <p id="error-message" class="error_message">Must be a valid date</p>
+          <label for="year-input" class="" id="year-label">Year</label>
+          <input type="number" placeholder="YYYY" id="year-input" class="">
+          <p id="year-error-message" class="error_message">Must be a valid date</p>
         </div>
       </div>
     </div>
 
    <div class="separation">
      <div class="line"></div>
-     <div class="arrow">
+     <div class="arrow" onclick="calculAge()">
        <i class="ri-arrow-down-line"></i>
       </div>
    </div>
@@ -64,16 +64,15 @@
       <p>days</p>
     </div>
    </div>
-    
-
-
+  
   </section>
-
-
 </body>
+
 
 <footer class="attribution">
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-  Coded by <a href="#">Your Name Here</a>.
+  Coded by <a href="#">OnSake</a>.
 </footer>
+<script src="assets/js/script.js"></script>
+
 </html>

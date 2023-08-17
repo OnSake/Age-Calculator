@@ -51,9 +51,10 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1000px;
+  width: 900px;
   background-color: var(--white-color);
   border-radius: 30px 30px 200px 30px;
+  margin-top: -50px;
 }
 
 /* ====================== INPUTS ====================== */
@@ -127,7 +128,7 @@ body{
   align-items: center;
   cursor: pointer;
   transition: .3s;
-  right: 100px;
+  right: 80px;
 }
 
 .arrow i{
@@ -167,11 +168,11 @@ body{
 }
 
 /* ====================== JS CLASS ====================== */
-.error_input{
-  outline: 1px solid var(--light-red-primary);
+input.error_input{
+  border: 1px solid var(--light-red-primary);
 }
 
-.error_label{
+label.error_label{
   color: var(--light-red-primary);
 }
 
@@ -183,5 +184,66 @@ body{
 /* ====================== FOOTER ====================== */
 
 footer{
-  bottom: 0;
+  margin-top: 180px;
+}
+
+
+
+
+/* ====================== MEDIA QUERIES ====================== */
+
+@media screen and (max-width : 950px){
+  .container{
+    width: 600px;
+  }
+
+  .arrow{
+    right: 40%;
+  }
+
+  footer{
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container{
+    width: 500px;
+  }
+
+  .inputs{
+    gap: 20px;
+  }
+
+  .number-inputs input{
+    width: 60px;
+    font-size: 20px;
+  }
+
+  .text span, 
+  .text p{
+    font-size: 50px;
+  }
+
+  footer{
+    margin-top: 250px;
+  }
+}
+  @media screen and (max-width: 500px) {
+  .container{
+    width: 350px;
+    }
+
+    .inputs{
+      gap: 10px;
+    }
+  
+    .number-inputs input{
+      width: 40px;
+      font-size: 20px;
+    }
+    .text span, 
+    .text p{
+      font-size: 30px;
+    }
 }
